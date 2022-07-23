@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <!-- Logo -->
+  <img src="logos/Minh's%20Bookstore-logos_white_cropped.png" class="logo" alt="logo">
+  <!-- Hamburger icon -->
+  <input class="side-menu" type="checkbox" id="side-menu"/>
+  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+  <!-- Menu -->
+  <nav class="nav">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories/category1.html">Category 1</a> </li>
+      <li><a href="categories/category2.html">Category 2</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="contact">
+  <div class="form-block">
+    <div class="forms">
+      <div class="custom-select forms" style="width:200px;">
+        <label for="sell-buy">Contact purpose: </label>
+        <select id="sell-buy">
+          <option value="Sell">I want to sell books</option>
+          <option value="Buy">I want to buy books</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="forms form-block">
+    <label for="name" class="nl"> Your name?</label>
+    <input id="name" type="text">
+  </div>
+  <div class="forms form-block">
+    <label for="email" class="nl"> Your email?</label>
+    <input id="email" type="email">
+  </div>
+  <div class="forms form-block">
+    <label for="phone" class="nl"> Your phone?</label>
+    <input id="phone" type="tel">
+  </div>
+  <div class="forms form-block">
+    <div>How can we contact you?</div>
+    <label> Email
+      <input type="checkbox">
+    </label>
+    <label> Phone
+      <input type="checkbox">
+    </label>
+    <div class="forms form-block">
+      <div>Do you want to receive our weekly newsletter?</div>
+      <div>
+      <input type="radio" id="yes" name="newsletter" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="newsletter" value="no">
+      <label for="no">No</label><br>
+      </div>
+    </div>
+    <div class="form-block">
+    <label for="note" class="nl">Note:</label>
+    <textarea id="note" name="Note" rows="4" cols="50"></textarea>
+    <br>
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</main>
+<footer>
+  <nav>
+    <ul class="footer">
+      <li class="footer-item"><a href="#">About Us</a></li>
+      <li class="footer-item"><a href="#">Privacy Policy</a> </li>
+      <li class="footer-item"><a href="#">Terms</a></li>
+      <li class="footer-item"><a href="#">Copyright</a></li>
+      <li class="footer-item"><a href="Contact%20Us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</footer>
+</body>
+</html>

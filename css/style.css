@@ -1,0 +1,285 @@
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --grey: #85888C;
+    --blue: #071d58;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--blue);
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+    background-color: var(--black);
+    box-shadow: 1px 1px 5px 0px var(--grey);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo */
+.logo{
+    display: inline-block;
+    max-width: 300px;
+    max-height: 100px;
+}
+
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--black);
+    overflow: hidden;
+
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+
+}
+
+.menu a:hover{
+    background-color: var(--grey);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 960px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+
+    .menu li{
+        float: left;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--grey);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+    .upper-book{
+        display: flex !important;
+    }
+    .upper-book-column{
+        width: 33% !important;
+    }
+    .book-middle-img{
+        display: block !important;
+    }
+    .upper-middle{
+        display: block !important;
+    }
+    .forms{
+        display: inline;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+ margin: 0 auto;
+}
+.footer-item{
+    display: inline;
+    padding:5px 10px;
+}
+.category-box{
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.grid-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.book-in-grid{
+    float: left;
+    width: 33.33%;
+    border: 5px solid lightblue;
+}
+.box-title{
+    justify-content: center;
+    text-align: center;
+}
+a{
+color: wheat;
+}
+.book-image{
+    max-width: 100%;
+    height: auto;
+}
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+.upper-book{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.upper-book-column{
+    display: flex;
+    justify-content: center;
+
+}
+.upper-book img{
+    max-height: 200px;
+}
+.upper-middle{
+    display: inline-flex;
+    width: 100px;
+    height: 100%;
+}
+.book-middle-img{
+    display: inline;
+    height: 67px;
+    width: auto;
+}
+.price{
+    color: white;
+}
+.description{
+    color: white;
+}
+
+.contact{
+
+    color: white;
+}
+.form-block{
+    display: block;
+}
+@media (max-width: 960px) {
+    .nl{
+        display: block;
+    }
+}
